@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1 class="text-3xl font-bold underline">ExpoSim Internship Form Webpage</h1>
+      <div>
+        <p>
+          <label>
+            Name:
+            <input type="text" id="name" placeholder="eg.: Vinit Raj" />
+          </label>
+        </p>
+
+        <p>
+          <label>
+            E-mail:
+            <input type="email" id="email" placeholder="eg.: abc@xyz.com" />
+          </label>
+        </p>
+
+        <p>
+          <label>
+            Phone:
+            <input type="tel" id="phone" placeholder="eg.: 1234567890" />
+          </label>
+        </p>
+
+        <p>
+          Gender:
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label><br />
+        </p>
+
+        <p>
+          <label for="age">Age:</label>
+          <select name="age" id="age">
+            <option value="" disabled selected>Choose your age</option>
+            <option value="young">18-25</option>
+            <option value="mid">26-35</option>
+            <option value="mom">36-45</option>
+            <option value="dadi">46+</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="comments">Comments (is any):</label>
+          <textarea id="comments" rows="4" cols="25"></textarea>
+        </p>
+
+        <p>
+          <input type="password" id="password" />
+          <input type="checkbox" onclick="showPassword()" />Show Password
+        </p>
+
+        <p>
+          <button id="submit" onclick="submitForm()">Submit</button>
+        </p>
+      </div>
+    </div>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
